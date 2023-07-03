@@ -11,6 +11,8 @@ restart_sequence = "\nHuman: "
 # prompt를 통해 ChatGPT의 대화 특성을 설정할 수 있음
 prompt = "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: Hello, who are you?\nAI: I am an AI created by OpenAI. How can I help you today?\nHuman: "
 
+
+# ChatGPT 모델을 설정하고, prompt 입력을 받아 결과값을 반환하는 함수
 def openai_create(prompt):
     # ChatGPT로부터 원하는 응답을 받을 수 있도록 속성을 설정하는 부분
     response = openai.Completion.create(
@@ -37,7 +39,7 @@ def openai_create(prompt):
     # ChatGPT의 응답을 반환하는 부분
     return response.choices[0].text
 
-# ChatGPT 모델의 응답을 생성하고 기록하는 기능을 제공합니다.
+# ChatGPT 모델의 응답을 생성하고 기록하는 함수
 def chatgpt_clone(input, history):
     # 이전 대화 기록을 나타내는 매개변수입니다. 이전 대화 기록이 제공되지 않은 경우, history를 빈 리스트로 초기화합니다.
     history = history or []
@@ -55,7 +57,7 @@ def chatgpt_clone(input, history):
     return history, history
 
 
-# Gradio의 Blocks 객체를 생성합니다. 이 객체는 코드 블록을 정의하고 관리하는 데 사용됩니다.
+# Gradio의 Blocks 객체를 생성하는 부분
 block = gradio.Blocks()
 
 
