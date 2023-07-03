@@ -39,7 +39,7 @@ def openai_create(prompt):
     # ChatGPT의 응답을 반환하는 부분
     return response.choices[0].text
 
-# ChatGPT 모델의 응답을 생성하고 기록하는 함수
+# ChatGPT 모델의 응답을 호출하고 기록하는 함수
 def chatgpt_clone(input, history):
     # 이전 대화 기록을 나타내는 매개변수입니다. 이전 대화 기록이 제공되지 않은 경우, history를 빈 리스트로 초기화합니다.
     history = history or []
