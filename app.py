@@ -63,7 +63,7 @@ block = gradio.Blocks()
 
 with block:
     # 마크다운 문법을 통해 웹 앱 화면의 텍스트를 설정하는 부분
-    gradio.Markdown("""<h1><center>니만의 GPT 챗봇</center></h1>""")
+    gradio.Markdown("""<h1><center>나만의 GPT 챗봇</center></h1>""")
     # Gradio에서 제공하는 ChatBot GUI
     chatbot = gradio.Chatbot()
     # ChatGPT에 입력을 넣는 텍스트 박스를 정의하는 코드
