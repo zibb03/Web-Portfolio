@@ -22,6 +22,8 @@ ChatGPT를 활용하여 웹 서비스를 구현하고,
 
 ---
 
+[Colab](https://colab.research.google.com/drive/1rktykAP_Deu_u6lKGVVx24HDOSh9h3pL#scrollTo=66uzye-qjmHz)
+
 [홍보물](https://microschool.kr/MS)
 
 [공학도서관](https://gongdo.kr/courses/gULipQ2i4DhhqCh3AbX8)
