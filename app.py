@@ -1,3 +1,20 @@
+import subprocess
+import sys
+
+def update_pip():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+
+def install_package(package):
+    try:
+        subprocess.check_output([sys.executable, "-m", "pip", "show", package])
+    except subprocess.CalledProcessError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+update_pip()
+required_packages = ["openai", "gradio"]
+for package in required_packages:
+    install_package(package)
+
 import openai
 import gradio
 
