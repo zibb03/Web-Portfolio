@@ -24,7 +24,7 @@ import openai
 import gradio
 
 # OpenAI API 키를 입력하는 부분
-openai.api_key = "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"
+openai.api_key = "xxxxxx"
 
 # start_sequence = "\nAI:"
 # restart_sequence = "\nHuman: "
