@@ -1,5 +1,9 @@
+# 라이브러리 자동 설치 코드
 import subprocess
 import sys
+
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', buffering=1)
 
 def update_pip():
     subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
@@ -15,14 +19,15 @@ required_packages = ["openai", "gradio"]
 for package in required_packages:
     install_package(package)
 
+
 import openai
 import gradio
 
 # OpenAI API 키를 입력하는 부분
-openai.api_key = "xxxxxx"
+openai.api_key = "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"
 
-start_sequence = "\nAI:"
-restart_sequence = "\nHuman: "
+# start_sequence = "\nAI:"
+# restart_sequence = "\nHuman: "
 
 # Textbox에 사용되는 prompt의 내용을 작성하는 부분
 # prompt를 통해 ChatGPT의 대화 특성을 설정할 수 있음
@@ -55,6 +60,7 @@ def openai_create(prompt):
 
     # ChatGPT의 응답을 반환하는 부분
     return response.choices[0].text
+
 
 # ChatGPT 모델의 응답을 호출하고 기록하는 함수
 def chatgpt_clone(input, history):
