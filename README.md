@@ -20,10 +20,12 @@ ChatGPT를 활용한 웹 서비스 구현 포트폴리오 과정의 실습 자�
 ChatGPT를 활용하여 웹 서비스를 구현하고,
 구현한 서비스를 Github를 통해 관리하는 방법을 배웁니다.
 
----
-
+## 수업 자료
+[Google Sheet](bit.ly/msclass0718)
 [Colab](https://colab.research.google.com/drive/1rktykAP_Deu_u6lKGVVx24HDOSh9h3pL#scrollTo=66uzye-qjmHz)
 
-[홍보물](https://microschool.kr/MS)
+---
+
+[홍보물](https://microschool.kr/MS2023)
 
 [공학도서관](https://gongdo.kr/courses/gULipQ2i4DhhqCh3AbX8)
