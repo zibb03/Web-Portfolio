@@ -21,8 +21,8 @@ ChatGPT를 활용하여 웹 서비스를 구현하고,
 구현한 서비스를 Github를 통해 관리하는 방법을 배웁니다.
 
 ## 수업 자료
-[Google Sheet](bit.ly/msclass0718)
-[Colab](https://colab.research.google.com/drive/1rktykAP_Deu_u6lKGVVx24HDOSh9h3pL#scrollTo=66uzye-qjmHz)
+[Colab 코드](https://colab.research.google.com/drive/1rktykAP_Deu_u6lKGVVx24HDOSh9h3pL#scrollTo=66uzye-qjmHz)
+
 [GitHub 과정](https://even-run-ca4.notion.site/GPT-GitHub-8b6075a1a90349dfa34e30da2fe8b7f0?pvs=4)
 
 ---
